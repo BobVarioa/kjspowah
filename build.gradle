@@ -114,6 +114,8 @@ dependencies {
     implementation "curse.maven:powah-rearchitected-633483:6397231"
     implementation "me.shedaniel.cloth:cloth-config-neoforge:$cloth_config_version"
     implementation "curse.maven:guideme-1173950:6396436"
+
+    implementation "curse.maven:jei-238222:7129287"
 }
 
 processResources {

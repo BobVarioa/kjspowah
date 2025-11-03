@@ -12,7 +12,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.List;
 
 public interface EnergizingOrbRecipe {
-    RecipeKey<List<Ingredient>> INPUTS = IngredientComponent.UNWRAPPED_INGREDIENT_LIST.key("ingredients", ComponentRole.INPUT);
+    RecipeKey<List<Ingredient>> INPUTS = IngredientComponent.INGREDIENT.instance().asList().key("ingredients", ComponentRole.INPUT);
     RecipeKey<Long> ENERGY = NumberComponent.LONG.key("energy", ComponentRole.INPUT);
     RecipeKey<ItemStack> OUTPUT = ItemStackComponent.ITEM_STACK.key("result", ComponentRole.OUTPUT);
 
